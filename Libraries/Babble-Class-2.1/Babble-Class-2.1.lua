@@ -1,6 +1,6 @@
 --[[
 Name: Babble-Class-2.1
-Revision: $Rev: 10836 $
+Revision: $Rev: 13631 $
 Author(s): eternally777 (eternally777@gmail.com)
 Based On: BabbleLib-2.0 by ckknight
 Website: http://www.wowace.com/index.php/Babble-Class-2.1
@@ -11,7 +11,7 @@ Dependencies: AceLibrary, AceLocale-2.1
 ]]
 
 local MAJOR_VERSION = "Babble-Class-2.1"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 10836 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 13631 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 if not AceLibrary:HasInstance("AceLocale-2.1") then error(MAJOR_VERSION .. " requires AceLocale-2.1") end
@@ -89,7 +89,7 @@ AceLocale:RegisterTranslation(MAJOR_VERSION, "zhCN", function()
 		["Priest"] = "牧师",
 		["Druid"] = "德鲁伊",
 		["Paladin"] = "圣骑士",
-		["Shaman"] = "萨满祭祀",
+		["Shaman"] = "萨满祭司",
 		["Rogue"] = "盗贼",
 	}
 end)
