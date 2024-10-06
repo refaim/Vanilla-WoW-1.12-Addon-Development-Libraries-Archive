@@ -1,6 +1,6 @@
 --[[
 	Name: Babble-Spell-2.2
-	Revision: $Rev: 25189 $
+	Revision: $Rev: 25191 $
 	Author(s): ckknight (ckknight@gmail.com)
 	Website: http://ckknight.wowinterface.com/
 	Documentation: http://wiki.wowace.com/index.php/Babble-Spell-2.2
@@ -12,7 +12,7 @@
 ]]
 
 local MAJOR_VERSION = "Babble-Spell-2.2"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 25188 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 25191 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 if not AceLibrary:HasInstance("AceLocale-2.2") then error(MAJOR_VERSION .. " requires AceLocale-2.2") end
@@ -574,6 +574,7 @@ BabbleSpell:RegisterTranslations("enUS", function()
 		["Forsaken Skills"] = true,
 		["Frailty"] = true,
 		["Freeze"] = true,
+		["Free Action"] = true,
 		["Freeze Solid"] = true,
 		["Freezing Trap Effect"] = true,
 		["Freezing Trap"] = true,
@@ -1071,7 +1072,7 @@ BabbleSpell:RegisterTranslations("enUS", function()
 		["Polearm Specialization"] = true,
 		["Polearms"] = true,
 		["Polymorph"] = true,
-		["Polymorph: Pig"] = true, 
+		["Polymorph: Pig"] = true,
 		["Polymorph: Turtle"] = true,
 		["Portal: Darnassus"] = true,
 		["Portal: Ironforge"] = true,
@@ -1152,6 +1153,7 @@ BabbleSpell:RegisterTranslations("enUS", function()
 		["Renew"] = true,
 		["Repentance"] = true,
 		["Repulsive Gaze"] = true,
+		["Restoration"] = true,
 		["Restorative Totems"] = true,
 		["Resurrection"] = true,
 		["Retaliation"] = true,
@@ -1441,6 +1443,7 @@ BabbleSpell:RegisterTranslations("enUS", function()
 		["Unstable Affliction"] = true,
 		["Unstable Concoction"] = true,
 		["Unstable Power"]=true,
+		["Untamed Fury"] = true,
 		["Unyielding Faith"] = true,
 		["Uppercut"] = true,
 		["Vampiric Embrace"] = true,
@@ -2072,7 +2075,7 @@ BabbleSpell:RegisterTranslations("ruRU", function()
 		["Frost Trap"] = "Ледяная ловушка",
 		["Frost Ward"] = "Защита от магии льда",
 		["Frost Warding"] = "Защита от льда",
-		["Frost Weakness"] = "Морозная слабость",
+		["Frost Weakness"] = "Уязвимость ко льду",
 		["Frostbite"] = "Обморожение",
 		["Frostbolt Volley"] = "Залп ледяных стрел",
 		["Frostbolt"] = "Ледяная стрела",
@@ -9656,6 +9659,7 @@ local spellIcons = {
 	["Forked Lightning"] = "Spell_Nature_ChainLightning",
 	["Forsaken Skills"] = "Spell_Shadow_AntiShadow",
 	["Frailty"] = "Spell_Shadow_AnimateDead",
+	["Free Action"] = "INV_Potion_04",
 	["Freeze"] = "Spell_Frost_FrostNova",
 	["Freeze Solid"] = "Spell_Fost_Glacier",
 	["Freezing Trap"] = "Spell_Frost_ChainsOfIce",
@@ -10215,6 +10219,7 @@ local spellIcons = {
 	["Renew"] = "Spell_Holy_Renew",
 	["Repentance"] = "Spell_Holy_PrayerOfHealing",
 	["Repulsive Gaze"] = "Ability_GolemThunderClap",
+	["Restoration"] = "Spell_Holy_DispelMagic",
 	["Restorative Totems"] = "Spell_Nature_ManaRegenTotem",
 	["Resurrection"] = "Spell_Holy_Resurrection",
 	["Retaliation"] = "Ability_Warrior_Challange",
@@ -10479,6 +10484,7 @@ local spellIcons = {
 	["Unleashed Rage"] = "Spell_Nature_Ancestralguardian",
 	["Unstable Concoction"] = "Spell_Fire_Incinerate",
 	["Unstable Power"] = "Trade_Engineering",
+	["Untamed Fury"] = "Spell_Nature_BloodLust",
 	["Unyielding Faith"] = "Spell_Holy_UnyieldingFaith",
 	["Uppercut"] = "INV_Gauntlets_05",
 	["Vampiric Embrace"] = "Spell_Shadow_UnsummonBuilding",
