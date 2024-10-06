@@ -1,6 +1,6 @@
 --[[
 	Name: Babble-Boss-2.0
-	Revision: $Rev: 14112 $
+	Revision: $Rev: 14231 $
 	Author(s): ckknight (ckknight@gmail.com)
 	Website: http://ckknight.wowinterface.com/
 	Documentation: http://wiki.wowace.com/index.php/Babble-Boss-2.0
@@ -10,7 +10,7 @@
 ]]
 
 local MAJOR_VERSION = "Babble-Boss-2.0"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 14112 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 14231 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -1402,9 +1402,9 @@ BabbleBoss:RegisterTranslations("zhTW", function()
 		["Lethon"] = "雷索",
 		["High Priestess Jeklik"] = "高階祭司耶克里克",
 		["High Priest Venoxis"] = "高階祭司溫諾希斯",
-		["High Priest Thekal"] = "古拉巴什食腐者",
-		["High Priestess Arlokk"] = "哈卡萊先知",
-		["High Priestess Mar'li"] = "哈卡萊安魂者",
+		["High Priest Thekal"] = "高階祭司塞卡爾",
+		["High Priestess Arlokk"] = "高階祭司婭爾羅",
+		["High Priestess Mar'li"] = "高階祭司瑪爾羅",
 		["Jin'do the Hexxer"] = "妖術師金度",
 		["Bloodlord Mandokir"] = "血領主曼多基爾",
 		["Gahz'ranka"] = "加茲蘭卡",
