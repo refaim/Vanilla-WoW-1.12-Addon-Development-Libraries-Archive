@@ -1,6 +1,6 @@
 --[[
 Name: Babble-SpellTree-2.2
-Revision: $Rev: 14410 $
+Revision: $Rev: 17189 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-SpellTree-2.2
@@ -10,7 +10,7 @@ Dependencies: AceLibrary, AceLocale-2.2
 ]]
 
 local MAJOR_VERSION = "Babble-SpellTree-2.2"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 14410 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 17189 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -238,9 +238,9 @@ BabbleSpellTree:RegisterTranslations("zhCN", function()
 		["Feral Combat"] = "野性战斗",
 		["Restoration"] = "恢复",
 		-- Hunter
-		["Beast Mastery"] = "野兽掌握",
+		["Beast Mastery"] = "野兽控制",
 		["Marksmanship"] = "射击",
-		["Survival"] = "生存",
+		["Survival"] = "生存技能",
 		-- Mage
 		["Arcane"] = "奥术",
 		["Fire"] = "火焰",
@@ -252,7 +252,7 @@ BabbleSpellTree:RegisterTranslations("zhCN", function()
 		-- Priest
 		["Discipline"] = "戒律",
 		-- ["Holy"] = "神圣", -- same as Paladin
-		["Shadow"] = "暗影",
+		["Shadow"] = "暗影魔法",
 		-- Rogue
 		["Assassination"] = "刺杀",
 		["Combat"] = "战斗",
