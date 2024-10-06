@@ -1,6 +1,6 @@
 ﻿--[[
 Name: Babble-Zone-2.0
-Revision: $Rev: 14621 $
+Revision: $Rev: 14622 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.0
@@ -10,7 +10,7 @@ Dependencies: AceLibrary, AceLocale-2.0
 ]]
 
 local MAJOR_VERSION = "Babble-Zone-2.0"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 14621 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 14622 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -585,6 +585,103 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Zul'Farrak"] = "줄파락",
 		["Zul'Gurub"] = "줄구룹",
 	}
+end)
+
+BabbleZone:RegisterTranslations("ruRU", function()
+    return {
+        ["Ahn'Qiraj"] = "Ан'Кираж",
+        ["Alterac Mountains"] = "Альтеракские горы",
+        ["Alterac Valley"] = "Альтеракская долина",
+        ["Arathi Basin"] = "Низина Арати",
+        ["Arathi Highlands"] = "Нагорье Арати",
+        ["Ashenvale"] = "Ясеневый лес",
+        ["Azshara"] = "Азшара",
+        ["Badlands"] = "Бесплодные земли",
+        ["The Barrens"] = "Степи",
+        ["Blackfathom Deeps"] = "Непроглядная Пучина",
+        ["Blackrock Depths"] = "Глубины Черной горы",
+        ["Blackrock Mountain"] = "Черная гора",
+        ["Blackrock Spire"] = "Пик Черной горы",
+        ["Blackwing Lair"] = "Логово Крыла Тьмы",
+        ["Blasted Lands"] = "Выжженные земли",
+        ["Booty Bay"] = "Пиратская Бухта",
+        ["Burning Steppes"] = "Пылающие степи",
+        ["Caverns of Time"] = "Пещеры Времени",
+        ["Darkshore"] = "Темные берега",
+        ["Darnassus"] = "Дарнас",
+        ["The Deadmines"] = "Мертвые копи",
+        ["Deadwind Pass"] = "Перевал Мертвого Ветра",
+        ["Deeprun Tram"] = "Подземный поезд",
+        ["Desolace"] = "Пустоши",
+        ["Dire Maul"] = "Забытый Город",
+        ["Dire Maul (East)"] = "Забытый город (Восток)",
+        ["Dire Maul (West)"] = "Забытый город (Запад)",
+        ["Dire Maul (North)"] = "Забытый город (Север)",
+        ["Dun Morogh"] = "Дун Морог",
+        ["Durotar"] = "Дуротар",
+        ["Duskwood"] = "Сумеречный лес",
+        ["Dustwallow Marsh"] = "Пылевые топи",
+        ["Eastern Kingdoms"] = "Восточные королевства",
+        ["Eastern Plaguelands"] = "Восточные Чумные земли",
+        ["Elwynn Forest"] = "Элвиннский лес",
+        ["Everlook"] = "Круговзор",
+        ["Felwood"] = "Оскверненный лес",
+        ["Feralas"] = "Фералас",
+        ["The Forbidding Sea"] = "Зловещее море",
+        ["Gadgetzan"] = "Прибамбасск",
+        ["Gnomeregan"] = "Гномреган",
+        ["The Great Sea"] = "Великое море",
+        ["Hall of Legends"] = "Зал Легенд",
+        ["Hillsbrad Foothills"] = "Предгорья Хилсбрада",
+        ["The Hinterlands"] = "Внутренние земли",
+        ["Hyjal"] = "Хиджал",
+        ["Ironforge"] = "Стальгорн",
+        ["Kalimdor"] = "Калимдор",
+        ["Loch Modan"] = "Лок Модан",
+        ["Maraudon"] = "Мародон",
+        ["Molten Core"] = "Огненные Недра",
+        ["Moonglade"] = "Лунная поляна",
+        ["Mulgore"] = "Мулгор",
+        ["Naxxramas"] = "Наксрамас",
+        ["Onyxia's Lair"] = "Логово Ониксии",
+        ["Orgrimmar"] = "Оргриммар",
+        ["Ratchet"] = "Кабестан",
+        ["Ragefire Chasm"] = "Огненная Пропасть",
+        ["Razorfen Downs"] = "Курганы Иглошкурых",
+        ["Razorfen Kraul"] = "Лабиринты Иглошкурых",
+        ["Redridge Mountains"] = "Красногорье",
+        ["Ruins of Ahn'Qiraj"] = "Руины Ан'Киража",
+        ["Scarlet Monastery"] = "Монастырь Алого ордена",
+        ["Scholomance"] = "Некроситет",
+        ["Searing Gorge"] = "Тлеющее ущелье",
+        ["Shadowfang Keep"] = "Крепость Темного Клыка",
+        ["Silithus"] = "Силитус",
+        ["Silverpine Forest"] = "Серебряный бор",
+        ["The Stockade"] = "Тюрьма",
+        ["Stonetalon Mountains"] = "Когтистые горы",
+        ["Stormwind City"] = "Штормград",
+        ["Stranglethorn Vale"] = "Тернистая долина",
+        ["Stratholme"] = "Стратхольм",
+        ["Swamp of Sorrows"] = "Болото Печали",
+        ["Tanaris"] = "Танарис",
+        ["Teldrassil"] = "Тельдрассил",
+        ["Temple of Ahn'Qiraj"] = "Храм Ан'Кираж",
+        ["The Temple of Atal'Hakkar"] = "Храм Атал'Хаккара",
+        ["Thousand Needles"] = "Тысяча Игл",
+        ["Thunder Bluff"] = "Громовой Утес",
+        ["Tirisfal Glades"] = "Тирисфальские леса",
+        ["Uldaman"] = "Ульдаман",
+        ["Un'Goro Crater"] = "Кратер Ун'Горо",
+        ["Undercity"] = "Подгород",
+        ["Wailing Caverns"] = "Пещеры Стенаний",
+        ["Warsong Gulch"] = "Ущелье Песни Войны",
+        ["Western Plaguelands"] = "Западные Чумные земли",
+        ["Westfall"] = "Западный Край",
+        ["Wetlands"] = "Болотина",
+        ["Winterspring"] = "Зимние Ключи",
+        ["Zul'Farrak"] = "Зул'Фаррак",
+        ["Zul'Gurub"] = "Зул'Гуруб",
+    }
 end)
 
 BabbleZone:Debug()
