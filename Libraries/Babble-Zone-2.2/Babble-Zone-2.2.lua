@@ -1,6 +1,6 @@
 --[[
 Name: Babble-Zone-2.2
-Revision: $Rev: 17780 $
+Revision: $Rev: 17781 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.2
@@ -10,7 +10,7 @@ Dependencies: AceLibrary, AceLocale-2.2
 ]]
 
 local MAJOR_VERSION = "Babble-Zone-2.2"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 17780 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 17781 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -28,6 +28,29 @@ local BabbleZone = AceLibrary("AceLocale-2.2"):new(MAJOR_VERSION)
 
 BabbleZone:RegisterTranslations("enUS", function()
 	return {
+-- Turtle WOW
+		["The Black Morass"] = true,
+		["Blackrock Spire"] = true,
+		["Alah'thalas"] = true,
+		["Amani'alor"] = true,
+		["Crescent Grove"] = true,
+		["Emerald Sanctum"] = true,
+		["Gillijim's Isle"] = true,
+		["Gilneas City"] = true,
+		["Gilneas"] = true,
+		["Hateforge Quarry"] = true,
+		["Icepoint Rock"] = true,
+		["Karazhan Crypt"] = true,
+		["Karazhan"] = true,
+		["Lapidis Isle"] = true,
+		["Lower Karazhan Halls"] = true,
+		["Moomoo Grove"] = true,
+		["Scarlet Enclave"] = true,
+		["Stormwind Vault"] = true,
+		["Sunnyglade Valley"] = true,
+		["Tel'Abim"] = true,
+		["Winter Veil Vale"] = true,
+-- /Turtle WOW
 		["Ahn'Qiraj"] = true,
 		["Alterac Mountains"] = true,
 		["Alterac Valley"] = true,
