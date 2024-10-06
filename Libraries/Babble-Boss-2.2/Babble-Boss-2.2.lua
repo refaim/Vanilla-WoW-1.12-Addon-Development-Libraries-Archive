@@ -1,6 +1,6 @@
 --[[
 Name: Babble-Boss-2.2
-Revision: $Rev: 20006 $
+Revision: $Rev: 20007 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Boss-2.2
@@ -1070,42 +1070,18 @@ end)
 
 BabbleBoss:RegisterTranslations("deDE", function()
 	return {
-		["Avalanchion"] = "Avalanchion",
-		["The Windreaver"] = "Der Windpl\195\188nderer",
-		["Baron Charr"] = "Baron Charr",
-		["Princess Tempestria"] = "Prinzessin Tempestria",
+		-- BWL
 		["Grethok the Controller"] = "Grethok der Aufseher",
-		["Patchwerk"] = "Flickwerk",
-		["Grobbulus"] = "Grobbulus",
-		["Gluth"] = "Gluth",
-		["Thaddius"] = "Thaddius",
-		["Feugen"] = "Feugen",
-		["Stalagg"] = "Stalagg",
-		["Anub'Rekhan"] = "Anub'Rekhan",
-		["Grand Widow Faerlina"] = "Großwitwe Faerlina",
-		["Maexxna"] = "Maexxna",
-		["Instructor Razuvious"] = "Instrukteur Razuvious",
-		["Deathknight Understudy"] = "Reservist der Todesritter",
-		["Gothik the Harvester"] = "Gothik der Seelenjäger",
-		["Highlord Mograine"] = "Hochlord Mograine",
-		["Thane Korth'azz"] = "Thane Korth'azz",
-		["Lady Blaumeux"] = "Lady Blaumeux",
-		["Sir Zeliek"] = "Sire Zeliek",
-		["The Four Horsemen"]= "Die Vier Reiter",
-		["Noth the Plaguebringer"] = "Noth der Seuchenfürst",
-		["Heigan the Unclean"] = "Heigan der Unreine",
-		["Loatheb"] = "Loatheb",
-		["Sapphiron"] = "Saphiron",
-		["Kel'Thuzad"] = "Kel'Thuzad",
 		["Lord Victor Nefarius"] = "Lord Victor Nefarius",
 		["Nefarian"] = "Nefarian",
 		["Vaelastrasz the Corrupt"] = "Vaelastrasz der Verdorbene",
-		["Razorgore the Untamed"] = "Razorgore der Ungezähmte",
-		["Broodlord Lashlayer"] = "Brutwächter Dreschbringer",
+		["Razorgore the Untamed"] = "Feuerkralle der Ungezähmte",
+		["Broodlord Lashlayer"] = "Brutwächter Dreschbringer", -- should be "Brutwächter Dreschbringer" but Nefarian is a strange realm; 2016-09-23: they finally fixed it
 		["Chromaggus"] = "Chromaggus",
 		["Ebonroc"] = "Schattenschwinge",
 		["Firemaw"] = "Feuerschwinge",
 		["Flamegor"] = "Flammenmaul",
+		-- MC
 		["Majordomo Executus"] = "Majordomus Exekutus",
 		["Ragnaros"] = "Ragnaros",
 		["Baron Geddon"] = "Baron Geddon",
@@ -1116,16 +1092,41 @@ BabbleBoss:RegisterTranslations("deDE", function()
 		["Lucifron"] = "Lucifron",
 		["Gehennas"] = "Gehennas",
 		["Magmadar"] = "Magmadar",
+		-- Naxxramas
+		["Patchwerk"] = "Flickwerk",
+		["Grobbulus"] = "Grobbulus",
+		["Gluth"] = "Gluth",
+		["Thaddius"] = "Thaddius",
+		["Feugen"] = "Feugen",
+		["Stalagg"] = "Stalagg",
+		["Anub'Rekhan"] = "Anub'Rekhan",
+		["Grand Widow Faerlina"] = "Gro\195\159witwe Faerlina",
+		["Maexxna"] = "Maexxna",
+		["Instructor Razuvious"] = "Instrukteur Razuvious",
+		["Deathknight Understudy"] = "Deathknight Understudy",
+		["Gothik the Harvester"] = "Gothik der Seelenjäger",
+		["Highlord Mograine"] = "Hochlord Mograine",
+		["Thane Korth'azz"] = "Thane Korth'azz",
+		["Lady Blaumeux"] = "Lady Blaumeux",
+		["Sir Zeliek"] = "Sire Zeliek",
+		["The Four Horsemen"]= "Die Vier Reiter",
+		["Noth the Plaguebringer"] = "Noth der Seuchenfürst",
+		["Heigan the Unclean"] = "Heigan der Unsaubere",
+		["Loatheb"] = "Loatheb",
+		["Sapphiron"] = "Sapphiron",
+		["Kel'Thuzad"] = "Kel'Thuzad",
+		-- Worldboss
 		["Onyxia"] = "Onyxia",
 		["Azuregos"] = "Azuregos",
 		["Emeriss"] = "Smariss",
 		["Taerar"] = "Taerar",
 		["Lethon"] = "Lethon",
+		["Lord Kazzak"] = "Lord Kazzak",
+		["Ysondre"] = "Ysondre",
+		-- Zul'Gurub
 		["Jin'do the Hexxer"] = "Jin'do der Verhexer",
 		["Bloodlord Mandokir"] = "Blutfürst Mandokir",
 		["Hakkar"] = "Hakkar",
-		["Lord Kazzak"] = "Lord Kazzak",
-		["Ysondre"] = "Ysondre",
 		["High Priestess Jeklik"] = "Hohepriesterin Jeklik",
 		["High Priest Venoxis"] = "Hohepriester Venoxis",
 		["High Priest Thekal"] = "Hohepriester Thekal",
@@ -1143,13 +1144,15 @@ BabbleBoss:RegisterTranslations("deDE", function()
 		["Moam"] = "Moam",
 		["Anubisath Guardian"] = "Beschützer des Anubisath",
 		["Ossirian the Unscarred"] = "Ossirian der Narbenlose",
+		["Kurinnaxx"] = "Kurinnaxx",
+		-- AQ40
 		["Lord Kri"] = "Lord Kri",
 		["Princess Yauj"] = "Prinzessin Yauj",
 		["Vem"] = "Vem",
-		["The Bug Family"] = "Die Käferfamilie",
+		["The Bug Family"] = "Das Käfertrio",
 		["Eye of C'Thun"] = "Auge von C'Thun",
 		["C'Thun"] = "C'Thun",
-		["Anubisath Defender"] = "Verteidiger des Anubisath",
+		["Anubisath Defender"] = "Verteidiger der Anubisath",
 		["Fankriss the Unyielding"] = "Fankriss der Unnachgiebige",
 		["Princess Huhuran"] = "Prinzessin Huhuran",
 		["Ouro"] = "Ouro",
@@ -1157,8 +1160,13 @@ BabbleBoss:RegisterTranslations("deDE", function()
 		["The Prophet Skeram"] = "Der Prophet Skeram",
 		["Emperor Vek'lor"] = "Imperator Vek'lor",
 		["Emperor Vek'nilash"] = "Imperator Vek'nilash",
-		["The Twin Emperors"] = "Die Zwillings-Imperatoren",
+		["The Twin Emperors"] = "Die Zwillingsimperatoren",
 		["Viscidus"] = "Viscidus",
+		-- Other
+		["Avalanchion"] = "Avalanchion",
+		["The Windreaver"] = "Der Windpl\195\188nderer",
+		["Baron Charr"] = "Baron Charr",
+		["Princess Tempestria"] = "Prinzessin Tempestria",
 		["Alzzin the Wildshaper"] = "Alzzin der Wildformer",
 		["Ambassador Flamelash"] = "Botschafter Flamelash",
 		["Anger'rel"] = "Anger'rel",
@@ -1278,9 +1286,7 @@ BabbleBoss:RegisterTranslations("deDE", function()
 		["Razorclaw the Butcher"] = "Rasiermesserklaue der Metzger",
 		["Wolf Master Nandos"] = "Wolfmeister Nados",
 		["Rend Blackhand"] = "Rend Blackhand",
-		["Kurinnaxx"] = "Kurinnaxx",
-		["Ancient Core Hound"] = "";
-		["Gurubashi Berserker"] = "";
+
 		["Stoneskin Gargoyle"] = "Steinhautgargoyle",
 		["Elder Mottled Boar"] = "Alter scheckiger Eber",
 	}
