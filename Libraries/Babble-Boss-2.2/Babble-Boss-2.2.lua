@@ -1,6 +1,6 @@
 --[[
 Name: Babble-Boss-2.2
-Revision: $Rev: 20007 $
+Revision: $Rev: 20008 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Boss-2.2
@@ -10,7 +10,7 @@ Dependencies: AceLibrary, AceLocale-2.2
 ]]
 
 local MAJOR_VERSION = "Babble-Boss-2.2"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 20006 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 20007 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -81,6 +81,14 @@ BabbleBoss:RegisterTranslations("enUS", function()
 		["Emeriss"] = true,
 		["Taerar"] = true,
 		["Lethon"] = true,
+		-- TurtleWOW
+		["Turtlhu"] = true,
+		["Nerubian"] = true,
+		["Reaver"] = true,
+		["Ostarius"] = true,
+		["Concavius"] = true,
+		["Dark Reaver of Karazhan"] = true,
+		----------------------
 		["High Priestess Jeklik"] = true,
 		["High Priest Venoxis"] = true,
 		["High Priest Thekal"] = true,
@@ -239,6 +247,7 @@ BabbleBoss:RegisterTranslations("enUS", function()
 		["Wolf Master Nandos"] = true,
 		["Rend Blackhand"] = true,
 		["Kurinnaxx"] = true,
+
 		["Maur Grimtotem"] = true,
 		["Oggleflint"] = true,
 		["Taragaman the Hungerer"] = true,
@@ -258,6 +267,42 @@ BabbleBoss:RegisterTranslations("enUS", function()
 		["Ghamoo-ra"] = true,
 		["Lady Sarevess"] = true,
 		["Gelihast"] = true,
+		-- TheCrescentGrove TurtleWOW
+		["Grovetender Engryss"] = true,
+		["Keeper Ranathos"] = true,
+		["High Priestess A'lathea"] = true,
+		["Fenektis the Deceiver"] = true,
+		["Master Raxxieth"] = true,
+		-- HateforgeQuarry TurtleWOW
+		["High Foreman Bargul Blackhammer"] = true,
+		["Engineer Figgles"] = true,
+		["Corrosis"] = true,
+		["Hatereaver Annihilator"] = true,
+		["Hargesh Doomcaller"] = true,
+		-- KarazhanCrypt TurtleWOW
+		["Marrowspike"] = true,
+		["Hivaxxis"] = true,
+		["Corpsemuncher"] = true,
+		["Guard Captain Gort"] = true,
+		["Archlich Enkhraz"] = true,
+		["Commander Andreon"] = true,
+		["Alarus"] = true,
+		["Half-Buried Treasure Chest"] = true,
+		-- CavernsOfTimeBlackMorass TurtleWOW
+		["Chronar"] = true,
+		["Harbinger Aph'ygth"] = true,
+		["Time-Lord Epochronos"] = true,
+		["Antnormi"] = true,
+		["Infinite Chromie"] = true,
+		-- StormwindVault TurtleWOW
+		["Aszosh Grimflame"] = true,
+		["Tham'Grarr"] = true,
+		["Black Bride"] = true,
+		["Damian"] = true,
+		["Volkan Cruelblade"] = true,
+		["Arc'tiras"] = true,
+		["Vault Armory Equipment"] = true,
+		-------------------------------------
 		["Lorgus Jett"] = true,
 		["Baron Aquanis"] = true,
 		["Twilight Lord Kelris"] = true,
