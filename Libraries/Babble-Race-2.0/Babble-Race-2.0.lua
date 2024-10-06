@@ -1,6 +1,6 @@
 --[[
 Name: Babble-Race-2.0
-Revision: $Rev: 9146 $
+Revision: $Rev: 14113 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Race-2.0
@@ -10,7 +10,7 @@ Dependencies: AceLibrary, AceLocale-2.0
 ]]
 
 local MAJOR_VERSION = "Babble-Race-2.0"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 9146 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 14113 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 if not AceLibrary:HasInstance("AceLocale-2.0") then error(MAJOR_VERSION .. " requires AceLocale-2.0") end
@@ -27,24 +27,24 @@ local BabbleRace = AceLibrary("AceLocale-2.0"):new(MAJOR_VERSION)
 
 BabbleRace:RegisterTranslations("enUS", function()
 	return {
-		["Human"] = "Human",
-		["Night elf"] = "Night elf",
-		["Dwarf"] = "Dwarf",
-		["Gnome"] = "Gnome",
+		["Human"] = true,
+		["Night elf"] = true,
+		["Dwarf"] = true,
+		["Gnome"] = true,
 		
-		["Orc"] = "Orc",
-		["Tauren"] = "Tauren",
-		["Troll"] = "Troll",
-		["Undead"] = "Undead",
+		["Orc"] = true,
+		["Tauren"] = true,
+		["Troll"] = true,
+		["Undead"] = true,
 		
-		["Humans"] = "Humans",
-		["Night elves"] = "Night elves",
-		["Dwarves"] = "Dwarves",
-		["Gnomes"] = "Gnomes",
+		["Humans"] = true,
+		["Night elves"] = true,
+		["Dwarves"] = true,
+		["Gnomes"] = true,
 		
-		["Orcs"] = "Orcs",
+		["Orcs"] = true,
 		["Tauren_PL"] = "Tauren",
-		["Trolls"] = "Trolls",
+		["Trolls"] = true,
 		["Undead_PL"] = "Undead",
 	}
 end)
@@ -166,6 +166,30 @@ BabbleRace:RegisterTranslations("zhCN", function()
 		["Tauren_PL"] = "牛头人",
 		["Trolls"] = "巨魔",
 		["Undead_PL"] = "亡灵",		
+	}
+end)
+
+BabbleRace:RegisterTranslations("zhTW", function()
+	return {
+		["Human"] = "人類",
+		["Night elf"] = "夜精靈",
+		["Dwarf"] = "矮人",
+		["Gnome"] = "地精",
+
+		["Orc"] = "獸人",
+		["Tauren"] = "牛頭人",
+		["Troll"] = "食人妖",
+		["Undead"] = "不死族",
+
+		["Humans"] = "人類",
+		["Night elves"] = "夜精靈",
+		["Dwarves"] = "矮人",
+		["Gnomes"] = "地精",
+
+		["Orcs"] = "獸人",
+		["Tauren_PL"] = "牛頭人",
+		["Trolls"] = "食人夭",
+		["Undead_PL"] = "不死族",
 	}
 end)
 
