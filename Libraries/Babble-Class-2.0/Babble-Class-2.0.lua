@@ -1,6 +1,6 @@
---[[
+﻿--[[
 Name: Babble-Class-2.0
-Revision: $Rev: 8339 $
+Revision: $Rev: 14112 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Class-2.0
@@ -10,12 +10,16 @@ Dependencies: AceLibrary, AceLocale-2.0
 ]]
 
 local MAJOR_VERSION = "Babble-Class-2.0"
-local MINOR_VERSION = "$Revision: 8339 $"
+local MINOR_VERSION = tonumber(string.sub("$Revision: 14112 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
-if not AceLibrary:IsNewVersion(MAJOR_VERSION, MINOR_VERSION) then return end
 
 if not AceLibrary:HasInstance("AceLocale-2.0") then error(MAJOR_VERSION .. " requires AceLocale-2.0") end
+
+local _, x = AceLibrary("AceLocale-2.0"):GetLibraryVersion()
+MINOR_VERSION = MINOR_VERSION * 100000 + x
+
+if not AceLibrary:IsNewVersion(MAJOR_VERSION, MINOR_VERSION) then return end
 
 local BabbleClass = AceLibrary("AceLocale-2.0"):new(MAJOR_VERSION)
 
@@ -24,15 +28,15 @@ local BabbleClass = AceLibrary("AceLocale-2.0"):new(MAJOR_VERSION)
 
 BabbleClass:RegisterTranslations("enUS", function()
 	return {
-		["Warlock"] = "Warlock",
-		["Warrior"] = "Warrior",
-		["Hunter"] = "Hunter",
-		["Mage"] = "Mage",
-		["Priest"] = "Priest",
-		["Druid"] = "Druid",
-		["Paladin"] = "Paladin",
-		["Shaman"] = "Shaman",
-		["Rogue"] = "Rogue",
+		["Warlock"] = true,
+		["Warrior"] = true,
+		["Hunter"] = true,
+		["Mage"] = true,
+		["Priest"] = true,
+		["Druid"] = true,
+		["Paladin"] = true,
+		["Shaman"] = true,
+		["Rogue"] = true,
 	}
 end)
 
@@ -66,11 +70,11 @@ end)
 
 BabbleClass:RegisterTranslations("frFR", function()
 	return {
-		["Warlock"] = "Démoniste",
+		["Warlock"] = "D\195\169moniste",
 		["Warrior"] = "Guerrier",
 		["Hunter"] = "Chasseur",
 		["Mage"] = "Mage",
-		["Priest"] = "Prêtre",
+		["Priest"] = "Pr\195\170tre",
 		["Druid"] = "Druide",
 		["Paladin"] = "Paladin",
 		["Shaman"] = "Chaman",
@@ -87,8 +91,22 @@ BabbleClass:RegisterTranslations("zhCN", function()
 		["Priest"] = "牧师",
 		["Druid"] = "德鲁伊",
 		["Paladin"] = "圣骑士",
-		["Shaman"] = "萨满祭祀",
+		["Shaman"] = "萨满祭司",
 		["Rogue"] = "盗贼",
+	}
+end)
+
+BabbleClass:RegisterTranslations("zhTW", function()
+	return {
+		["Warlock"] = "術士",
+		["Warrior"] = "戰士",
+		["Hunter"] = "獵人",
+		["Mage"] = "法師",
+		["Priest"] = "牧師",
+		["Druid"] = "德魯伊",
+		["Paladin"] = "聖騎士",
+		["Shaman"] = "薩滿",
+		["Rogue"] = "盜賊",
 	}
 end)
 
@@ -111,31 +129,15 @@ BabbleClass:SetStrictness(true)
 
 function BabbleClass:GetColor(class)
 	self:argCheck(class, 2, "string")
-	if string.find(class, "^[A-Z]*$") then
-		class = string.upper(strsub(class, 1, 1)) .. string.lower(strsub(class, 2))
-	elseif self:HasReverseTranslation(class) then
-		class = self:GetReverseTranslation(class)
+	if self:HasReverseTranslation(class) then
+		class = string.upper(self:GetReverseTranslation(class))
+	else
+		class = string.upper(class)
 	end
-	if class == "Warlock" then
-		return RAID_CLASS_COLORS["WARLOCK"].r, RAID_CLASS_COLORS["WARLOCK"].g, RAID_CLASS_COLORS["WARLOCK"].b
-	elseif class == "Warrior" then
-		return RAID_CLASS_COLORS["WARRIOR"].r, RAID_CLASS_COLORS["WARRIOR"].g, RAID_CLASS_COLORS["WARRIOR"].b
-	elseif class == "Hunter" then
-		return RAID_CLASS_COLORS["HUNTER"].r, RAID_CLASS_COLORS["HUNTER"].g, RAID_CLASS_COLORS["HUNTER"].b
-	elseif class == "Mage" then
-		return RAID_CLASS_COLORS["MAGE"].r, RAID_CLASS_COLORS["MAGE"].g, RAID_CLASS_COLORS["MAGE"].b
-	elseif class == "Priest" then
-		return RAID_CLASS_COLORS["PRIEST"].r, RAID_CLASS_COLORS["PRIEST"].g, RAID_CLASS_COLORS["PRIEST"].b
-	elseif class == "Druid" then
-		return RAID_CLASS_COLORS["DRUID"].r, RAID_CLASS_COLORS["DRUID"].g, RAID_CLASS_COLORS["DRUID"].b
-	elseif class == "Paladin" then
-		return RAID_CLASS_COLORS["PALADIN"].r, RAID_CLASS_COLORS["PALADIN"].g, RAID_CLASS_COLORS["PALADIN"].b
-	elseif class == "Shaman" then
-		return RAID_CLASS_COLORS["SHAMAN"].r, RAID_CLASS_COLORS["SHAMAN"].g, RAID_CLASS_COLORS["SHAMAN"].b
-	elseif class == "Rogue" then
-		return RAID_CLASS_COLORS["ROGUE"].r, RAID_CLASS_COLORS["ROGUE"].g, RAID_CLASS_COLORS["ROGUE"].b
+	if RAID_CLASS_COLORS and RAID_CLASS_COLORS[class] then
+		return RAID_CLASS_COLORS[class].r, RAID_CLASS_COLORS[class].g, RAID_CLASS_COLORS[class].b
 	end
-		return 0.63, 0.63, 0.63
+	return 0.63, 0.63, 0.63
 end
 
 function BabbleClass:GetHexColor(class)
