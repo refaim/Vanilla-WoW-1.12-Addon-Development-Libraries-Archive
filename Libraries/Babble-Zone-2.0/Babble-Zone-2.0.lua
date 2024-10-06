@@ -1,6 +1,6 @@
 ﻿--[[
 Name: Babble-Zone-2.0
-Revision: $Rev: 14620 $
+Revision: $Rev: 14621 $
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Zone-2.0
@@ -10,7 +10,7 @@ Dependencies: AceLibrary, AceLocale-2.0
 ]]
 
 local MAJOR_VERSION = "Babble-Zone-2.0"
-local MINOR_VERSION = tonumber(string.sub("$Revision: 14620 $", 12, -3))
+local MINOR_VERSION = tonumber(string.sub("$Revision: 14621 $", 12, -3))
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -118,27 +118,6 @@ BabbleZone:RegisterTranslations("enUS", function()
 		["Winterspring"] = true,
 		["Zul'Farrak"] = true,
 		["Zul'Gurub"] = true,
-		
-		-- Burning Crusade
-		["Azuremyst Isle"] = true,
-		["Bloodmyst Isle"] = true,
-		["Eversong Woods"] = true,
-		["Ghostlands"] = true,
-		["The Exodar"] = true,
-		["Silvermoon City"] = true,
-		["Shadowmoon Valley"] = true,
-		["Black Temple"] = true,
-		["Terokkar Forest"] = true,
-		["Auchindoun"] = true,
-		["Hellfire Peninsula"] = true,
-		["Hellfire Citadel"] = true,
-		["Nagrand"] = true,
-		["Zangarmarsh"] = true,
-		["Coilfang Reservoir"] = true,
-		["Blade's Edge Mountains"] = true,
-		["Gruul's Lair"] = true,
-		["Netherstorm"] = true,
-		["Tempest Keep"] = true,
 	}
 end)
 
@@ -231,27 +210,6 @@ BabbleZone:RegisterTranslations("deDE", function()
 		["Winterspring"] = "Winterspring",
 		["Zul'Farrak"] = "Zul'Farrak",
 		["Zul'Gurub"] = "Zul'Gurub",
-		
-		-- Burning Crusade
-		["Azuremyst Isle"] = "Azurnebel  Inseln",
-		["Bloodmyst Isle"] = "Blutnebel Inseln",
-		["Eversong Woods"] = "Immerlied W\195\164lder",
-		["Ghostlands"] = "Geisterl\195\164nder",
-		["The Exodar"] = "Das Exodar",
-		["Silvermoon City"] = "Silbermond Stadt",
-		["Shadowmoon Valley"] = "Schattenmondtal",
-		["Black Temple"] = "Schwarzer Tempel",
-		["Terokkar Forest"] = "Terokkar Wald",
-		["Auchindoun"] = "Auchindoun",
-		["Hellfire Peninsula"] = "Hllenfeuer Halbinsel",
-		["Hellfire Citadel"] = "Hllenfeuer Zitadelle",
-		["Nagrand"] = "Nagrand",
-		["Zangarmarsh"] = "Zangarsumpf",
-		["Coilfang Reservoir"] = "Spulenrei\195\159zahn Reservat",
-		["Blade's Edge Mountains"] = "Klingenrand Berge",
-		["Gruul's Lair"] = "Gruul's Hort",
-		["Netherstorm"] = "Nethersturm",
-		["Tempest Keep"] = "Tempest Unterschlupf",
 	}
 end)
 
@@ -344,27 +302,6 @@ BabbleZone:RegisterTranslations("frFR", function()
 		["Winterspring"] = "Berceau-de-l'Hiver",
 		["Zul'Farrak"] = "Zul'Farrak",
 		["Zul'Gurub"] = "Zul'Gurub",
-		
-		-- Burning Crusade
-		["Azuremyst Isle"] = "Ile de Brume-azure",
-		["Bloodmyst Isle"] = "Ile de Brume-sang",
-		["Eversong Woods"] = "Bois des Chants \195\169ternels",
-		["Ghostlands"] = "Les Terres fant\195\180mes",
-		["The Exodar"] = "L'Exodar",
-		["Silvermoon City"] = "Lune-d'argent",
-		["Shadowmoon Valley"] = "Vall\195\169e d'Ombrelune",
-		["Black Temple"] = "Temple noir",
-		["Terokkar Forest"] = "For\195\170t de Terokkar",
-		["Auchindoun"] = "Auchindoun",
-		["Hellfire Peninsula"] = "P\195\169ninsule des Flammes infernales",
-		["Hellfire Citadel"] = "Citadelle des Flammes infernales",
-		["Nagrand"] = "Nagrand",
-		["Zangarmarsh"] = "Mar\195\169cage de Zangar",
-		["Coilfang Reservoir"] = "R\195\169servoir de Glissecroc",
-		["Blade's Edge Mountains"] = "Les Tranchantes",
-		["Gruul's Lair"] = "Le repaire de Gruul",
-		["Netherstorm"] = "Raz-de-N\195\169ant",
-		["Tempest Keep"] = "Donjon de la temp\195\170te"
 	}
 end)
 
@@ -460,27 +397,6 @@ BabbleZone:RegisterTranslations("zhCN", function()
 		["Winterspring"] = "冬泉谷",
 		["Zul'Farrak"] = "祖尔法拉克",
 		["Zul'Gurub"] = "祖尔格拉布",
-		
-		-- Burning Crusade
---		["Azuremyst Isle"] = true,
---		["Bloodmyst Isle"] = true,
---		["Eversong Woods"] = true,
---		["Ghostlands"] = true,
---		["The Exodar"] = true,
---		["Silvermoon City"] = true,
---		["Shadowmoon Valley"] = true,
---		["Black Temple"] = true,
---		["Terokkar Forest"] = true,
---		["Auchindoun"] = true,
---		["Hellfire Peninsula"] = true,
---		["Hellfire Citadel"] = true,
---		["Nagrand"] = true,
---		["Zangarmarsh"] = true,
---		["Coilfang Reservoir"] = true,
---		["Blade's Edge Mountains"] = true,
---		["Gruul's Lair"] = true,
---		["Netherstorm"] = true,
---		["Tempest Keep"] = true,
 	}
 end)
 
@@ -573,27 +489,6 @@ BabbleZone:RegisterTranslations("zhTW", function()
 		["Winterspring"] = "冬泉谷",
 		["Zul'Farrak"] = "祖爾法拉克",
 		["Zul'Gurub"] = "祖爾格拉布",
-		
-		-- Burning Crusade
---		["Azuremyst Isle"] = true,
---		["Bloodmyst Isle"] = true,
---		["Eversong Woods"] = true,
---		["Ghostlands"] = true,
---		["The Exodar"] = true,
---		["Silvermoon City"] = true,
---		["Shadowmoon Valley"] = true,
---		["Black Temple"] = true,
---		["Terokkar Forest"] = true,
---		["Auchindoun"] = true,
---		["Hellfire Peninsula"] = true,
---		["Hellfire Citadel"] = true,
---		["Nagrand"] = true,
---		["Zangarmarsh"] = true,
---		["Coilfang Reservoir"] = true,
---		["Blade's Edge Mountains"] = true,
---		["Gruul's Lair"] = true,
---		["Netherstorm"] = true,
---		["Tempest Keep"] = true,
 	}
 end)
 
@@ -649,9 +544,9 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Maraudon"] = "마라우돈",
 		["Molten Core"] = "화산 심장부",
 		["Moonglade"] = "달의 숲",
-		["Mulgore"] = "멀고어",		
+		["Mulgore"] = "멀고어",
 		["Naxxramas"] = "낙스라마스",
-		["Onyxia's Lair"] = "오닉시아의 둥지",		
+		["Onyxia's Lair"] = "오닉시아의 둥지",
 		["Orgrimmar"] = "오그리마",
 		["Ratchet"] = "톱니항",
 		["Ragefire Chasm"] = "성난 불길협곡",
@@ -689,27 +584,6 @@ BabbleZone:RegisterTranslations("koKR", function()
 		["Winterspring"] = "여명의 설원",
 		["Zul'Farrak"] = "줄파락",
 		["Zul'Gurub"] = "줄구룹",
-		
-		-- Burning Crusade
-		["Azuremyst Isle"] = "하늘안개 섬",
-		["Bloodmyst Isle"] = "핏빛안개 섬",
-		["Eversong Woods"] = "영원노래 숲",
-		["Ghostlands"] = "유령의 땅",
-		["The Exodar"] = "엑소다르",
-		["Silvermoon City"] = "실버문",
-		["Shadowmoon Valley"] = "어둠달 골짜기",
-		["Black Temple"] = "검은 사원",
-		["Terokkar Forest"] = "테로카르 숲",
-		["Auchindoun"] = "아킨둔",
-		["Hellfire Peninsula"] = "지옥불 반도",
-		["Hellfire Citadel"] = "지옥불 성채",
-		["Nagrand"] = "나그란드",
-		["Zangarmarsh"] = "장가르 습지대",
-		["Coilfang Reservoir"] = "갈퀴송곳니 저수지",
-		["Blade's Edge Mountains"] = "칼날 산맥",
-		["Gruul's Lair"] = "그룰의 둥지",
-		["Netherstorm"] = "황천의 폭풍",
-		["Tempest Keep"] = "폭풍우 요새",
 	}
 end)
 
